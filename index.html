@@ -23,12 +23,14 @@
             <button onclick="handleSearch()" class="btn btn-accent">Search</button>
         </section>
         <!-- spinner / loader -->
-        <div class="text-primary text-center my-52">
-            <span class="loading loading-ball loading-xs"></span>
-            <span class="loading loading-ball loading-sm"></span>
-            <span class="loading loading-ball loading-md"></span>
-            <span class="loading loading-ball loading-lg"></span>
-        </div>
+        <section id="loading-spinner" class="hidden">
+            <div class="text-primary text-center my-52">
+                <span class="loading loading-ball loading-xs"></span>
+                <span class="loading loading-ball loading-sm"></span>
+                <span class="loading loading-ball loading-md"></span>
+                <span class="loading loading-ball loading-lg"></span>
+            </div>
+        </section>
         <!-- search result -->
         <section>
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
