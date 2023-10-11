@@ -7,9 +7,20 @@ const loadPhone = async (searchText) => {
 }
 
 const displayPhones = phones => {
-    // console.log(phones);
+    // console.log(phones.length);
     const phoneContainer = document.getElementById('phone-container');
     phoneContainer.textContent = '';
+    // Display show all btn if there is more than 10 phones.
+    const showAllContainer = document.getElementById('show-all-container');
+    if(phones.length >12){
+        showAllContainer.classList.remove('hidden');
+    }else{
+        showAllContainer.classList.add('hidden');
+
+    }
+    // to show a specific amount of phone
+    phones = phones.slice(0, 10);
+
     phones.forEach(phone => {
         // console.log(phone);
         const phoneCard = document.createElement('div');
